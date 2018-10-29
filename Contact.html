@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body
+
+{
+
+  margin: 0;
+  font-size:75px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #00FFFF	;
+  padding: 30px;
+  text-align: center;
+
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #00FFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #00FFFF;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h3>Steve Jobs</h3>
+</div>
+
+<div id="navbar">
+  <a href="Index.html">Home</a>
+  <a href="Biografie.html">Biografie</a>
+  <a href="Beroemddoor.html">Beroemd door</a>
+  <a href="Filmpje.html">Filmpje</a>
+  <a href="Contact.html">Contact</a>
+
+</div>
+
+<div class="content">
+
+
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<body>
+  <center><font size="6"><strong>Contact</strong></font>
+    <br>
+<font size="3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.476781139454!2d4.91599831534378!3d52.36177425569618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609711f21356f%3A0x4698c2612bcb276b!2sMetis+Montessori+Lyceum!5e0!3m2!1snl!2snl!4v1540804984919" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   <br>
+   Julius Heijt
+   <br>
+   13 jaar
+   <br>
+   21-09-2005 geboren
+   </font>

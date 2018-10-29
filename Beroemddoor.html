@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body
+
+{
+
+  margin: 0;
+  font-size:75px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #00FFFF	;
+  padding: 30px;
+  text-align: center;
+
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #00FFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #00FFFF;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h3>Steve Jobs</h3>
+</div>
+
+<div id="navbar">
+  <a href="Index.html">Home</a>
+  <a href="Biografie.html">Biografie</a>
+  <a href="Beroemddoor.html">Beroemd door</a>
+  <a href="Filmpje.html">Filmpje</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div class="content">
+
+
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<body>
+
+ <center><font size="6"><strong>Beroemd Door</strong></font>
+   <br>
+  <font size="3">Als het over Apple hebt, kun je niet om Steve Jobs heen. De legendarische oprichter bouwde Apple uit tot een miljardenbedrijf, dat wereldwijd werd bewonderd. Zijn perfectionisme en extreme focus op mooie en gebruiksvriendelijke producten zorgde ervoor dat we de iMac, iPod, iPhone en iPad vandaag kunnen gebruiken.
+
+Jobs als oprichter van Apple
+Steve Jobs richtte in 1976 samen met zijn studievriend Steve Wozniak het bedrijf Apple Computers op. Er was ook nog een derde oprichter, Ronald Wayne, maar die laatste liet zich al snel uitkopen uit angst voor de risico’s van de startupwereld. Steve Wozniak is de uitvinder van de Apple I en de belangrijkste ontwerper van de Apple II, maar ook hij legde zijn fulltime werkzaamheden neer in 1987. Wozniak is echter wel nog steeds aandeelhouder van het bedrijf.
+
+steve jobs john sculleySteve Jobs was misschien een van de oprichters van Apple, hij was zeker niet de eerste CEO. Apple werkte voor de productie van de Apple I aanvankelijk in de garage van de ouders van Steve Jobs. Doordat multimiljonair Mike Markkula investeerde in het bedrijf werd de Apple II mogelijk, maar de investeerders in Apple zagen het niet zitten dat de piepjonge Jobs een miljoenenbedrijf zou leiden. De Apple II is namelijk de eerste zeer succesvolle pc die in massaproductie is gefabriceerd. Door de Apple II kon Apple in 1980 naar de beurs en werd Steve jobs op zijn 25e multimiljonair.
+
+In 1978 verving Steve Jobs de allereerste CEO van Apple, Mike Scott voor de topman van Pepsi-Cola: John Sculley. Volgens Sculley zelf deed Jobs dit met de volgende beroemde opmerking: ‘Wil je de rest van je leven suikerwater verkopen of wil je een kans om de wereld te veranderen?’. Helaas bleek de relatie tussen de twee nogal lastig, mede door het temperament van Jobs. </font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </center>
+</body>
+</body>
+</html>
